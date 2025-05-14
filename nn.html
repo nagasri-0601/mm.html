@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">PRODUCT ADMIN</div>
+      <ul>
+        <li>Dashboard</li>
+        <li>Orders</li>
+        <li>Users</li>
+        <li class="active">Settings</li>
+        <li>Logout</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="dashboard">
+      <div class="charts">
+        <div class="card">Line Chart</div>
+        <div class="card">Bar Chart</div>
+        <div class="card">Pie Chart</div>
+        <div class="card notifications">
+          <h3>Notifications</h3>
+          <p>User X sent you a message.</p>
+          <p>User Y updated profile.</p>
+        </div>
+      </div>
+      <div class="orders">
+        <h3>Orders List</h3>
+        <table>
+          <thead>
+            <tr><th>Product</th><th>Status</th><th>Amount</th><th>Date</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Item A</td><td>Shipped</td><td>$25</td><td>2025-05-03</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="profile">
+      <h3>Edit Profile</h3>
+      <div class="profile-container">
+        <div class="avatar">
+          <img src="https://via.placeholder.com/100" alt="Avatar">
+          <button>Upload New Photo</button>
+        </div>
+        <form>
+          <input type="text" placeholder="Account Name">
+          <input type="email" placeholder="Account Email">
+          <input type="password" placeholder="Password">
+          <input type="password" placeholder="Re-type Password">
+          <input type="text" placeholder="Phone">
+          <button type="submit">Update Profile</button>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
